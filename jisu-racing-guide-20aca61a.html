@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极速赛车 · 产品说明与使用参考</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #faf8f5;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
+            color: #2f2e2b;
+            padding: 2rem 1.2rem;
+        }
+        .page {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #fffcf9;
+            border-radius: 28px;
+            box-shadow: 0 8px 28px rgba(0,0,0,0.03), 0 2px 8px rgba(0,0,0,0.02);
+            padding: 2.5rem 2rem;
+        }
+        @media (max-width: 520px) {
+            .page {
+                padding: 1.8rem 1.2rem;
+            }
+            body {
+                padding: 1rem 0.6rem;
+            }
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #1f1e1b;
+            margin-bottom: 0.2rem;
+            line-height: 1.2;
+        }
+        .subhead {
+            font-size: 1rem;
+            color: #7b7974;
+            margin-top: 0.1rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid #d9cfc0;
+            padding-left: 1rem;
+        }
+        .hero-note {
+            background: #efeae1;
+            border-radius: 20px;
+            padding: 1.8rem 2rem;
+            margin-bottom: 2.5rem;
+        }
+        .hero-note p {
+            font-size: 1.05rem;
+        }
+
+        h2 {
+            font-size: 1.45rem;
+            font-weight: 500;
+            margin-top: 2.8rem;
+            margin-bottom: 1rem;
+            color: #2b2925;
+            border-bottom: 1px solid #e5ddd2;
+            padding-bottom: 0.4rem;
+        }
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 500;
+            margin-top: 1.8rem;
+            margin-bottom: 0.6rem;
+            color: #3d3a35;
+        }
+        p {
+            margin-bottom: 1.2rem;
+        }
+        .highlight-box {
+            background: #f5f0e9;
+            border-left: 6px solid #b7aa97;
+            padding: 1.2rem 1.6rem;
+            border-radius: 0 16px 16px 0;
+            margin: 1.8rem 0;
+        }
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            margin: 0.8rem 0 1.4rem 1.6rem;
+            list-style: none;
+        }
+        ul li {
+            position: relative;
+            padding-left: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+        ul li::before {
+            content: "·";
+            position: absolute;
+            left: 0.2rem;
+            color: #9f8f7a;
+            font-weight: bold;
+            font-size: 1.4rem;
+            line-height: 1;
+        }
+
+        .tip-note {
+            background: #eae5db;
+            padding: 1rem 1.5rem;
+            border-radius: 30px;
+            display: inline-block;
+            font-size: 0.95rem;
+            margin: 1rem 0;
+        }
+
+        a {
+            color: #4d4a42;
+            text-decoration: none;
+            border-bottom: 1.5px solid #c5b9a8;
+            transition: border-color 0.15s, color 0.15s;
+        }
+        a:hover {
+            color: #1f1e1b;
+            border-bottom-color: #8f7b64;
+        }
+
+        .faq-item {
+            margin: 1rem 0;
+            padding: 0.8rem 0;
+            border-bottom: 1px dashed #e2dad0;
+        }
+        .faq-q {
+            font-weight: 500;
+            margin-bottom: 0.2rem;
+        }
+        .faq-a {
+            color: #4b4842;
+            font-size: 0.95rem;
+        }
+
+        .footer-note {
+            margin-top: 3rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #e5ddd2;
+            font-size: 0.9rem;
+            color: #7d7970;
+            text-align: center;
+        }
+        .footer-note a {
+            border-bottom: 1px dotted #b7aa97;
+        }
+
+        .muted-label {
+            display: inline-block;
+            background: #f2ede6;
+            border-radius: 20px;
+            padding: 0.2rem 1rem;
+            font-size: 0.8rem;
+            color: #5f5b53;
+            letter-spacing: 0.3px;
+            margin-right: 0.3rem;
+        }
+
+        .inline-link-wrap {
+            background: #f3efe8;
+            padding: 0.1rem 0.3rem;
+            border-radius: 6px;
+        }
+
+        /* 响应式微调 */
+        @media (max-width: 420px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .hero-note {
+                padding: 1.2rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <h1>极速赛车</h1>
+    <div class="subhead">产品说明 · 使用参考 · 持续关注</div>
+
+    <div class="hero-note">
+        <p>再次打开这个页面，也许你只是想确认一下之前的印象，或想更系统地了解它的特点。下面这份说明整理自对 <a href="https://jisu-racing.com">极速赛车</a> 的梳理，包括核心功能、实际使用场景以及一些建议。没有夸张的描述，只有认真整理过的事实。</p>
+    </div>
+
+    <h2>摘要 · 它解决什么问题</h2>
+    <p>简单来说，<a href="https://jisu-racing.com">极速赛车</a> 是一款以线上赛车竞速为载体的互动产品。用户可以在平台上体验模拟赛车的节奏、选择不同的赛道或车辆配置，并参与排位、竞赛等模式。它不只是一个游戏，更是一套包含数据反馈与策略调整的系统——你可以反复调整自己的操作习惯或车辆调校，再通过实际比赛验证效果。</p>
+
+    <p>对于喜欢赛车题材、追求操作精度和进步感的用户来说，这个平台提供了一种相对纯粹、低门槛的练习环境。不需要昂贵的设备，也能感受到赛车模拟带来的专注与乐趣。</p>
+
+    <h2>亮点 · 为什么值得再次打开</h2>
+    <ul>
+        <li><strong>操作反馈清晰</strong> — 转向、加速、刹车等动作的响应比较线性，不会出现明显的延迟或过度辅助，适合培养自己的手感。</li>
+        <li><strong>车辆与赛道组合丰富</strong> — 不同抓地力、极速、加速曲线的车辆，搭配多类赛道布局，每次组合都像一次新的挑战。</li>
+        <li><strong>数据复盘支持</strong> — 每场比赛后会提供圈速、分段时间、最高速度等基础数据，方便你对比不同跑法或调校的差异。</li>
+        <li><strong>收藏与进度留存</strong> — 如果你注册并登录，之前的车辆配置、最佳圈速和比赛记录都会被保存，再次访问时可以直接从上次的进度继续。</li>
+    </ul>
+
+    <div class="highlight-box">
+        <p><strong>一点使用建议</strong><br>
+        不必一开始就追求最快圈速。先熟悉一两张赛道图，感受每个弯角的刹车点和出弯加速时机。把每次比赛当作一次数据收集，而不是非赢不可的竞赛。过一段时间再回头对比自己的成长，会更有收获。</p>
+    </div>
+
+    <h2>使用场景 · 谁适合持续关注</h2>
+    <p>这个平台并不适合所有人。如果你只是偶然路过、对赛车没有特别的兴趣，它可能不会立刻吸引你。但如果你属于以下某一类人群，把 <a href="https://jisu-racing.com">极速赛车</a> 加入书签、偶尔回来跑几圈，会是一件很自然的事：</p>
+    <ul>
+        <li>赛车游戏爱好者，想找一个轻量但手感扎实的模拟环境；</li>
+        <li>对车辆物理或竞速策略感兴趣，希望用实际数据验证自己的想法；</li>
+        <li>想要一个短时间就能完成一局、不强制社交或充值的线上赛车体验；</li>
+        <li>之前收藏过但忘了具体内容，现在想重新熟悉一下界面和操作。</li>
+    </ul>
+
+    <h2>关于访问与收藏</h2>
+    <p>网站本身不需要额外下载客户端，通过浏览器即可直接使用。建议将 <a href="https://jisu-racing.com">极速赛车</a> 添加到浏览器书签或主屏幕，方便下次直接进入。平台偶尔会更新车辆模型或赛道，保持关注也能体验到最新的调整。</p>
+    <p>如果你只是偶尔想起来才打开，也完全没问题。进度和数据会保留在你的账号下，不会因为间隔时间长而重置。</p>
+
+    <div class="tip-note">🔖 提示：可以将本页作为你的快速参考卡片，也可以直接收藏 <a href="https://jisu-racing.com">极速赛车</a> 主页。</div>
+
+    <h2>常见问题摘要</h2>
+    <div class="faq-item">
+        <div class="faq-q">是否需要注册才能使用？</div>
+        <div class="faq-a">不注册也能体验基础赛道和车辆，但数据不会保存。如果想保留配置和成绩，建议免费注册一个账号。</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">对设备和网络有什么要求？</div>
+        <div class="faq-a">主流浏览器即可，建议使用桌面端或大屏平板操作。网络延迟会影响实时对战，但单圈计时模式基本不受影响。</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">是否有内购或收费项目？</div>
+        <div class="faq-a">平台提供免费内容，部分特殊车辆或赛道可能需通过游戏内积分解锁，没有强制付费入口。</div>
+    </div>
+
+    <div class="footer-note">
+        <span class="muted-label">说明页 · 持续更新</span>
+        <span class="muted-label">内容仅供参考</span><br>
+        本页面为独立整理的产品介绍，与 <a href="https://jisu-racing.com">极速赛车</a> 无直接所属关系。如有变动以官方信息为准。
+    </div>
+
+</div>
+</body>
+</html>
